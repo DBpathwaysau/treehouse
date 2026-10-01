@@ -108,6 +108,39 @@ display: none;
 
   pointer-events: none;
 }
+.blush-wash {
+  position: absolute;
+  width: min(400px, 48vw);
+  height: auto;
+
+  top: 64%;
+  left: 63%;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(8deg);
+
+  opacity: 0.25;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.botanical-branch {
+  position: absolute;
+  width: min(360px, 38vw);
+  height: auto;
+
+  top: 37%;
+  left: 34%;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(-10deg);
+
+  opacity: 0.58;
+  z-index: 1;
+  pointer-events: none;
+}
 .welcome h1,
 .welcome p,
 .welcome button {
