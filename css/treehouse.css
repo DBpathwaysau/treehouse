@@ -79,46 +79,35 @@ body {
 /* loose painted shape behind the welcome */
 
 .welcome::before {
-  content: "";
-
-  position: absolute;
-  width: 340px;
-  height: 250px;
-
-  border-radius:
-    48% 52% 63% 37%
-    / 42% 39% 61% 58%;
-
-  background: rgba(120, 132, 116, 0.09);
-
-  transform: rotate(-5deg);
-
-  filter: blur(1px);
-
-  z-index: 0;
+display: none;
 }
 
 
 /* tiny imperfect mark */
 
 .welcome::after {
-  content: "";
-
-  position: absolute;
-
-  width: 75px;
-  height: 1px;
-
-  background: rgba(52, 53, 47, 0.35);
-
-  transform:
-    translate(120px, 125px)
-    rotate(-8deg);
-
-  z-index: 1;
+ display: none;
 }
 
+.welcome-wash {
+  position: absolute;
 
+  width: min(720px, 82vw);
+  height: auto;
+
+  top: 50%;
+  left: 50%;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(-3deg);
+
+  opacity: 0.52;
+
+  z-index: 0;
+
+  pointer-events: none;
+}
 .welcome h1,
 .welcome p,
 .welcome button {
